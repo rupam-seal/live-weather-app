@@ -1,0 +1,41 @@
+body.light {
+    --colorPrimary: #F7F7F7;
+    --colorSecondary: #FFFFFF;
+    --colorSecondary50: #ffffffb0;
+    --colorSecondary20: #F6F6F6;
+    --colorText: #000000;
+    --colorText50: #0000008b;
+    --colorText20: #5e5e5e;
+
+    --colorOrange: #F97F29;
+    --colorDarkBlue: #0058f1;   
+    --colorGreen: #ebff93;  
+    --colorCyan: #91fff6;
+
+    --color1: #ffffff;
+    --color2:#ffffff8b;
+    --color3: #000000;
+    --color4:#0000008b;
+
+    --dateBoxShadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+}
+
+body.dark {
+    --colorPrimary: #15151a;
+    --colorSecondary: #101014;
+    --colorSecondary50: #1E1E1E;
+    --colorSecondary20: #1E1E1E;
+    --colorText: #ffffff;
+    --colorText50: #ffffff8b;
+    --colorText20: #9c9c9c;
+
+    --colorOrange: #F97F29;
+    --colorDarkBlue: #0058f1;
+    --colorGreen: #ebff93;
+    --colorCyan: #91fff6; 
+
+    --color1: #ffffff;
+    --color2:#ffffff8b;
+    --color3: #000000;
+    --color4:#0000008b;
+}
