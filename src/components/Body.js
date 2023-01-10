@@ -6,7 +6,7 @@ const Body = memo(() => {
   const [search, setSearch] = useState();
   const [weather, setWeather] = useState({});
 
-  const api_key = 'e34323ec7e274ae5d886f444c2eb4823';
+  const api_key = '';
   const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${search}&units=metric&APPID=${api_key}`;
 
   const searchPressed = () => {
