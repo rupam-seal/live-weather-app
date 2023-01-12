@@ -176,8 +176,44 @@
 
 .day__item {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     background-color: var(--colorSecondary20);
-    height: 10rem;
     border-radius: 1rem;
+    padding: 1rem 2rem 1rem 2rem;
+}
+
+.day__left {
+    display: flex;
+    align-items: center;
+}
+
+.day__img {
+    width: 6rem;
+    height: 6rem;
+}
+
+.day__info {
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.day__title {
+    font-size: 1.3rem;
+    color: var(--colorText50);
+    font-weight: 600;
+}
+
+.day__sub {
+    font-size: 1.5rem;
+    color: var(--colorText);
+    font-weight: 800;
+}
+
+.day__right {
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--colorOrange);
 }

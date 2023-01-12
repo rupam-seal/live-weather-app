@@ -1,28 +1,62 @@
 import React, { useState } from 'react';
 import Topbar from '../components/Topbar';
 import Body from '../components/Body';
+import axios from 'axios';
+import { Forecast, Weather } from '../api/WeatherApi';
 
 const HomePage = () => {
   const [search, setSearch] = useState();
   const [weather, setWeather] = useState({});
-
-  const api_key = 'e34323ec7e274ae5d886f444c2eb4823';
-  const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${search}&appid=${api_key}`;
+  const [day, setDay] = useState();
 
   const searchPressed = () => {
-    fetch(apiUrl)
-      .then((res) => res.json())
-      .then((result) => {
-        console.log(result);
-        setWeather(result);
+    const fetchWeather = () => {
+      axios.get(Weather(search)).then((response) => {
+        setWeather(response.data);
+        fetchForcast(response.data);
       });
+    };
+
+    const fetchForcast = (data) => {
+      axios
+        .get(Forecast(data.coord.lat, data.coord.lon))
+        .then((response) => {
+          setDay(response.data.daily);
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    };
+
+    fetchWeather();
   };
 
   return (
     <>
       <div className="container">
         <Topbar />
-        <Body />
+        {typeof weather.main !== 'undefined' ? (
+          <Body
+            day={day}
+            setSearch={setSearch}
+            searchPressed={searchPressed}
+            name={weather.name}
+            desc={weather.weather[0].description}
+            temp={weather.main.temp}
+            humadity={weather.main.humidity}
+            preasure={weather.main.pressure}
+          />
+        ) : (
+          <Body
+            setSearch={setSearch}
+            searchPressed={searchPressed}
+            name={'New York'}
+            desc={'rainy season'}
+            temp={'-9'}
+            humadity={'69'}
+            preasure={'89mb'}
+          />
+        )}
       </div>
     </>
   );
