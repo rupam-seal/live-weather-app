@@ -43,7 +43,7 @@ a {
 }
 
 /* ========== FOR RESPONSIVENESS ========== */
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
     html {
         font-size: 60%;
     }
@@ -52,5 +52,11 @@ a {
 @media (max-width: 500px) {
     html {
         font-size: 40%;
+    }
+} */
+
+@media (max-width: 500px) {
+    .container {
+        max-width: 45rem;
     }
 }

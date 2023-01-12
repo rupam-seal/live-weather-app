@@ -16,6 +16,7 @@ body.light {
     --color2:#ffffff8b;
     --color3: #000000;
     --color4:#0000008b;
+    --color5:#ffffff;
 
     --dateBoxShadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
 }
@@ -38,4 +39,5 @@ body.dark {
     --color2:#ffffff8b;
     --color3: #000000;
     --color4:#0000008b;
+    --color5:#1E1E1E;
 }
