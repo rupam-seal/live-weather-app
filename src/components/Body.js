@@ -13,7 +13,6 @@ const Body = memo(() => {
     fetch(apiUrl)
       .then((res) => res.json())
       .then((result) => {
-        console.log(result);
         setWeather(result);
       });
   };

@@ -1,6 +1,4 @@
 .section {
-    margin-top: 8rem;
-    width: 100%;
     background-color: var(--colorSecondary);
     border-radius: 2rem;
     padding: 3rem;
@@ -17,7 +15,7 @@
     align-items: center;
     background-color: var(--colorSecondary20);
     font-weight: 600;
-    width: 25rem;
+    max-width: 25rem;
     border-radius: 1rem;
 }
 

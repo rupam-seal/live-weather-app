@@ -14,14 +14,14 @@ body {
     background-color: var(--colorPrimary);
     margin: 0rem;
     font-family: 'Inter', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0rem 2rem 2rem 2rem;
 }
 
 .container {
-    padding: 2rem;
     max-width: 50rem;
-    height: 100vh;
-    margin-left: auto;
-    margin-right: auto;
     display: flex;
     align-items: center ;
     flex-direction: column;
@@ -43,26 +43,14 @@ a {
 }
 
 /* ========== FOR RESPONSIVENESS ========== */
-@media (max-width: 950px) {
-    .main__container {
-        width: 60rem;
-    }
-}
-
-@media (max-width: 650px) {
-    .main__container {
-        width: 45rem;
+@media (max-width: 600px) {
+    html {
+        font-size: 60%;
     }
 }
 
 @media (max-width: 500px) {
     html {
-        font-size: 47%;
-    }
-}
-
-@media (max-width: 282px) {
-    html {
-        font-size: 35%;
+        font-size: 40%;
     }
 }
