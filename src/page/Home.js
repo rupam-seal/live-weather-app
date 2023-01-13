@@ -54,7 +54,7 @@ const HomePage = () => {
             desc={'rainy season'}
             temp={'-9'}
             humadity={'69'}
-            preasure={'89mb'}
+            preasure={'89'}
           />
         )}
       </div>
