@@ -4,7 +4,17 @@ import { MdDateRange } from 'react-icons/md';
 import moment from 'moment/moment';
 
 const Body = memo(
-  ({ day, setSearch, searchPressed, name, desc, temp, humadity, preasure }) => {
+  ({
+    day,
+    setSearch,
+    searchPressed,
+    name,
+    country,
+    desc,
+    temp,
+    humadity,
+    preasure,
+  }) => {
     const days = day?.slice(1, 8).map((el, index) => {
       return (
         <div className="day" key={index}>
@@ -60,7 +70,7 @@ const Body = memo(
           <div className="detail">
             <div className="detail__place">
               <span>{name}</span>
-              <span>(US)</span>
+              <span>({country})</span>
             </div>
             <span className="detail__desc">{desc}</span>
           </div>

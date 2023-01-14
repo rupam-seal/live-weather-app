@@ -41,6 +41,7 @@ const HomePage = () => {
             setSearch={setSearch}
             searchPressed={searchPressed}
             name={weather.name}
+            country={weather.sys.country}
             desc={weather.weather[0].description}
             temp={weather.main.temp}
             humadity={weather.main.humidity}
