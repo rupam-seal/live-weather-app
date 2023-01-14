@@ -52,6 +52,7 @@ const HomePage = () => {
             setSearch={setSearch}
             searchPressed={searchPressed}
             name={'New York'}
+            country={'US'}
             desc={'rainy season'}
             temp={'-9'}
             humadity={'69'}
