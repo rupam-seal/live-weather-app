@@ -18,10 +18,6 @@ Live Search Weather App using React JS and React Functional Component, React Hoo
 - Framework: React
 - API: OpenWeatherMap API
 
-## Demo
-
-
-
 ## Installation
 
 Clone the project
