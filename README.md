@@ -15,7 +15,7 @@ Live Search Weather App using React JS and React Functional Component, React Hoo
 ## Tech Stack
 
 - Language: Javascript, HTML, CSS
-- Framework: React
+- Library: React
 - API: OpenWeatherMap API
 
 ## Installation
